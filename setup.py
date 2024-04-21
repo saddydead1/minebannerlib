@@ -16,7 +16,7 @@ setup(
   long_description_content_type='text/markdown',
   url='https://github.com/saddydead1/minebannerlib',
   packages=find_packages(),
-  install_requires=['requests>=2.25.1','nbtlib'],
+  install_requires=['requests>=2.25.1','nbtlib', 'pillow'],
   classifiers=[
     'Programming Language :: Python :: 3.11',
     'License :: OSI Approved :: MIT License',
