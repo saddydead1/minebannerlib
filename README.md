@@ -1,33 +1,35 @@
-# Helm Bot v1.2 - Дискорд бот для майнкрафт серверов
+# MineBannerLib
 
-Позволяет организовать гильдии на сервере дискорд.
+Python library for drawing banners.
 
-## Как это работает?
+## How it works?
 
-Позволяет зарегистрировать пользователя через сервер дискорд. После чего выдает ему роль участника сервера. Администраторы с роль модератора гильдий могут создавать гильдии для игроков. У каждой гильдии есть **имя, тег и цвет**. Бот автоматически создает роли и создает форум для гильдии.
+Draws a banner image from the received nbts. The flag will be saved to the _**buildbanner**_ root folder.
 
-## Зависимости
-
-1. nLogin плагин
-2. LuckPerms плагин
-3. База данных PostgreSQL
-
-_**Важно!** Бот работает только с Python 3.12 или новее_
-
-## Начало работы
-
-Для начала работы вам нужно отредактировать `config.ini` и внести туда свои данные.
-
-Для запуска бота введите
+## Installation
 
 ```
-python main.py
+pip install minebannerlin
 ```
 
-Или же создайте примерно такой dockerfile
+or
 
 ```
-FROM python:3.12.2-bookworm
-COPY . /app
-RUN pip install -r /app/requirements.txt
+python -m pip install minebannerlib
+```
+
+## Create a banner
+
+To do this, call the `create_banner()` function, to which you need to pass the _**NBTS**_ and the _**name of the flag**_
+
+## Example
+
+```python
+from minebannerlib import CreateBanner
+
+def main()
+  create_banner('test', '{BlockEntityTag:{Patterns:[{Color:14,Pattern:"cre"},{Color:4,Pattern:"sku"}]}}'
+
+if __name__ == '__main__':
+  main()
 ```
