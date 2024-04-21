@@ -9,7 +9,7 @@ Draws a banner image from the received nbts. The flag will be saved to the _**bu
 ## Installation
 
 ```
-pip install minebannerlin
+pip install minebannerlib
 ```
 
 or
