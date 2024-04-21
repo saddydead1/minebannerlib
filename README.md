@@ -30,7 +30,7 @@ from MineBannerLib import CreateBanner
 banner = CreateBanner
 
 def main():
-  banner.create_banner('test', '{BlockEntityTag:{Patterns:[{Color:14,Pattern:"cre"},{Color:4,Pattern:"sku"}]}}'
+  banner.create_banner('test', '{BlockEntityTag:{Patterns:[{Color:14,Pattern:"cre"},{Color:4,Pattern:"sku"}]}}')
 
 if __name__ == '__main__':
   main()
