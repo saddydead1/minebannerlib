@@ -8,7 +8,7 @@ def readme():
 
 setup(
   name='minebannerlib',
-  version='0.0.1',
+  version='0.0.2',
   author='saddydead1',
   author_email='saddydead1@gmail.com',
   description='Lib for create minecraft banner image',

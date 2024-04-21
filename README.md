@@ -25,10 +25,12 @@ To do this, call the `create_banner()` function, to which you need to pass the _
 ## Example
 
 ```python
-from minebannerlib import CreateBanner
+from MineBannerLib import CreateBanner
 
-def main()
-  create_banner('test', '{BlockEntityTag:{Patterns:[{Color:14,Pattern:"cre"},{Color:4,Pattern:"sku"}]}}'
+banner = CreateBanner
+
+def main():
+  banner.create_banner('test', '{BlockEntityTag:{Patterns:[{Color:14,Pattern:"cre"},{Color:4,Pattern:"sku"}]}}'
 
 if __name__ == '__main__':
   main()
