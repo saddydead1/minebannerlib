@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: minebannerlib
+Version: 0.0.1
+Summary: Lib for create minecraft banner image
+Home-page: https://github.com/saddydead1/minebannerlib
+Author: saddydead1
+Author-email: saddydead1@gmail.com
+Project-URL: GitHub, https://github.com/saddydead1/minebannerlib
+Keywords: minecraft banner python pil
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+Requires-Dist: requests>=2.25.1
+Requires-Dist: nbtlib
