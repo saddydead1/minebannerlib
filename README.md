@@ -22,8 +22,26 @@ python -m pip install minebannerlib
 
 To do this, call the `create_banner()` function, to which you need to pass the _**NBTS**_, _**name of the flag**_ and the _**base color**_
 
-## Example
+## Example create banner from nbts
 
+```python
+from MineBannerLib import CreateBanner
+
+banner = CreateBanner
+
+nbts = '{BlockEntityTag:{Patterns:[{Color:14,Pattern:"cre"},{Color:4,Pattern:"sku"}]}}'
+color_base = 15
+name = 'test'
+
+def main():
+  banner.create_banner(name, nbts, color_base)
+
+if __name__ == '__main__':
+  main()
+```
+
+## You can create banner from list 
+You must pass the second argument to `create_banner()` a list containing elements of type `Layer`, as in the example below
 ```python
 from MineBannerLib import CreateBanner
 
