@@ -44,15 +44,16 @@ if __name__ == '__main__':
 You must pass the second argument to `create_banner()` a list containing elements of type `Layer`, as in the example below
 ```python
 from MineBannerLib import CreateBanner
+from CreateBanner import Layer
 
 banner = CreateBanner
 
-nbts = '{BlockEntityTag:{Patterns:[{Color:14,Pattern:"cre"},{Color:4,Pattern:"sku"}]}}'
+parts = [Layer('mc', 2), Layer('hh', 1)]
 color_base = 15
 name = 'test'
 
 def main():
-  banner.create_banner(name, nbts, color_base)
+  banner.create_banner(name, parts, color_base)
 
 if __name__ == '__main__':
   main()
