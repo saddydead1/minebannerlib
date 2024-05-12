@@ -2,7 +2,6 @@ README.md
 setup.cfg
 setup.py
 MineBannerLib/CreateBanner.py
-MineBannerLib/__init__.py
 minebannerlib.egg-info/PKG-INFO
 minebannerlib.egg-info/SOURCES.txt
 minebannerlib.egg-info/dependency_links.txt

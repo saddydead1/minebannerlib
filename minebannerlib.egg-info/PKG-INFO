@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: minebannerlib
-Version: 0.0.3
+Version: 0.0.5
 Summary: Lib for create minecraft banner image
 Home-page: https://github.com/saddydead1/minebannerlib
 Author: saddydead1
@@ -15,6 +15,7 @@ Description-Content-Type: text/markdown
 Requires-Dist: requests>=2.25.1
 Requires-Dist: nbtlib
 Requires-Dist: pillow
+Requires-Dist: multipledispatch
 
 # MineBannerLib
 
@@ -45,14 +46,14 @@ To do this, call the `create_banner()` function, to which you need to pass the _
 ```python
 from MineBannerLib import CreateBanner
 
-banner = CreateBanner
+mbl = CreateBanner
 
 nbts = '{BlockEntityTag:{Patterns:[{Color:14,Pattern:"cre"},{Color:4,Pattern:"sku"}]}}'
 color_base = 15
 name = 'test'
 
 def main():
-  banner.create_banner(name, nbts, color_base)
+  mbl.create_banner(name, nbts, color_base)
 
 if __name__ == '__main__':
   main()

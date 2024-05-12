@@ -1,4 +1,5 @@
 from nbtlib import parse_nbt
+from multipledispatch import dispatch
 from dataclasses import dataclass
 import enum
 import os
@@ -121,7 +122,7 @@ def zero(a, b, alpha_a, alpha_b, alpha):
     return (a * alpha_a + b * alpha_b * (1 - alpha_a)) / alpha
 
 
-def getPartsFlag(nbts, clr: int):
+def get_parts_flag_from_nbts(nbts, clr: int):
     comp = parse_nbt(nbts)
     tags = [Layer(pattern='b', color=clr)]
     for i in comp['BlockEntityTag']['Patterns']:
@@ -130,7 +131,11 @@ def getPartsFlag(nbts, clr: int):
     return tags
 
 
-def create_banner(name: str, json: str, base_color: int):
-    createImg(getPartsFlag(json, base_color), name)
+@dispatch(str, str, int)
+def create_banner(name: str, nbts: str, base_color: int):
+    createImg(get_parts_flag_from_nbts(nbts, base_color), name)
 
-#create_banner('test', '{BlockEntityTag:{Patterns:[{Color:14,Pattern:"cre"},{Color:4,Pattern:"sku"}]}}', 12)
+@dispatch(str, list, int)
+def create_banner(name: str, nbts: list, base_color: int):
+    nbts.insert(0, Layer(pattern='b', color=base_color))
+    createImg(nbts, name)

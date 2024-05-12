@@ -8,7 +8,7 @@ def readme():
 
 setup(
   name='minebannerlib',
-  version='0.0.3',
+  version='0.0.5',
   author='saddydead1',
   author_email='saddydead1@gmail.com',
   description='Lib for create minecraft banner image',
@@ -16,7 +16,7 @@ setup(
   long_description_content_type='text/markdown',
   url='https://github.com/saddydead1/minebannerlib',
   packages=find_packages(),
-  install_requires=['requests>=2.25.1','nbtlib', 'pillow'],
+  install_requires=['requests>=2.25.1','nbtlib', 'pillow', 'multipledispatch'],
   classifiers=[
     'Programming Language :: Python :: 3.11',
     'License :: OSI Approved :: MIT License',

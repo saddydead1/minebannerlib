@@ -27,14 +27,14 @@ To do this, call the `create_banner()` function, to which you need to pass the _
 ```python
 from MineBannerLib import CreateBanner
 
-banner = CreateBanner
+mbl = CreateBanner
 
 nbts = '{BlockEntityTag:{Patterns:[{Color:14,Pattern:"cre"},{Color:4,Pattern:"sku"}]}}'
 color_base = 15
 name = 'test'
 
 def main():
-  banner.create_banner(name, nbts, color_base)
+  mbl.create_banner(name, nbts, color_base)
 
 if __name__ == '__main__':
   main()
