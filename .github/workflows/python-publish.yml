@@ -33,7 +33,4 @@ jobs:
     - name: Build package
       run: python setup.py sdist bdist_wheel
     - name: Publish package
-      run: twine upload --repository pypi dist/*
-      with:
-        user: __token__
-        password: ${{ secrets.PYPI_API_TOKEN }}
+      run: twine upload --repository pypi dist/* -u __token__ -p ${{ secrets.PYPI_API_TOKEN }}
