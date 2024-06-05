@@ -2,3 +2,8 @@
 LICENSE
 buildbanner
 .pypirc
+build
+.idea
+dist
+minebannerlib.egg-info
+.DS_Store

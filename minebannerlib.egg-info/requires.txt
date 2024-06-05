@@ -1,4 +1,0 @@
-requests>=2.25.1
-nbtlib
-pillow
-multipledispatch
