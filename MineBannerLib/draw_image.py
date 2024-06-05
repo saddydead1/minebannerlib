@@ -1,9 +1,9 @@
 from nbtlib import parse_nbt
 import os
 from PIL import Image
-from pattern import pattern
-from color import Color
-from layer import Layer
+from MineBannerLib.pattern import pattern
+from MineBannerLib.color import Color
+from MineBannerLib.layer import Layer
 
 
 def createImg(layers: list, name: str):
@@ -13,7 +13,7 @@ def createImg(layers: list, name: str):
 
     for layer in layers:
 
-        img = Image.open(f'./MineBannerLib/samples/{pattern[layer.pattern]}.png').convert("RGBA")
+        img = Image.open(f'{os.path.dirname(os.path.abspath(__file__))}/samples/{pattern[layer.pattern]}.png').convert("RGBA")
 
         pixels = img.load()
 
