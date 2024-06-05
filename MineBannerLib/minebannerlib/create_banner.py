@@ -1,6 +1,6 @@
 from multipledispatch import dispatch
-from MineBannerLib import draw_image as dr
-from MineBannerLib.layer import Layer
+from MineBannerLib.minebannerlib import draw_image as dr
+from MineBannerLib.minebannerlib.layer import Layer
 
 
 @dispatch(str, str, int)

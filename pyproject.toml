@@ -1,6 +1,6 @@
 [project]
 name = "minebannerlib"
-version = "0.1.0a"
+version = "0.1.0a1"
 authors = [
   { name="saddydead1", email="saddydead1@gmail.com" },
 ]
@@ -23,8 +23,7 @@ py-modules=['__init__', 'color', 'create_banner', 'draw_image', 'layer', 'patter
 
 [tool.setuptools.packages.find]
 namespaces = true
-where = ["MineBannerLib"]
+where = ["MineBannerLib/minebannerlib"]
 
 [tool.setuptools.package-data]
 samples = ["*.png"]
-"*"=["*.py"]
