@@ -25,7 +25,7 @@ To do this, call the `create_banner()` function, to which you need to pass the _
 ## Example create banner from nbts
 
 ```python
-from MineBannerLib import CreateBanner
+from MineBannerLib import __main__
 
 mbl = CreateBanner
 
@@ -33,17 +33,20 @@ nbts = '{BlockEntityTag:{Patterns:[{Color:14,Pattern:"cre"},{Color:4,Pattern:"sk
 color_base = 15
 name = 'test'
 
+
 def main():
-  mbl.create_banner(name, nbts, color_base)
+    mbl.create_banner(name, nbts, color_base)
+
 
 if __name__ == '__main__':
-  main()
+    main()
 ```
 
 ## You can create banner from list 
 You must pass the second argument to `create_banner()` a list containing elements of type `Layer`, as in the example below
+
 ```python
-from MineBannerLib import CreateBanner
+from MineBannerLib import __main__
 from CreateBanner import Layer
 
 banner = CreateBanner
@@ -52,9 +55,11 @@ parts = [Layer('mc', 2), Layer('hh', 1)]
 color_base = 15
 name = 'test'
 
+
 def main():
-  banner.create_banner(name, parts, color_base)
+    banner.create_banner(name, parts, color_base)
+
 
 if __name__ == '__main__':
-  main()
+    main()
 ```

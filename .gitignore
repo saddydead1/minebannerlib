@@ -2,3 +2,6 @@
 LICENSE
 buildbanner
 .pypirc
+build
+.idea
+dist
