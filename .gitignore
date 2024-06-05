@@ -5,3 +5,5 @@ buildbanner
 build
 .idea
 dist
+minebannerlib.egg-info
+.DS_Store
