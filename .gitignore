@@ -7,4 +7,3 @@ build
 dist
 minebannerlib.egg-info
 .DS_Store
-tests/buildbanner
