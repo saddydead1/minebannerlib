@@ -15,3 +15,16 @@ classifiers = [
 
 [project.urls]
 Homepage = "https://github.com/saddydead1/minebannerlib"
+Repository = "https://github.com/saddydead1/minebannerlib"
+
+[tool.setuptools]
+include-package-data = true
+py-modules=['__init__', 'color', 'create_banner', 'draw_image', 'layer', 'pattern']
+
+[tool.setuptools.packages.find]
+namespaces = true
+where = ["MineBannerLib"]
+
+[tool.setuptools.package-data]
+samples = ["*.png"]
+"*"=["*.py"]
