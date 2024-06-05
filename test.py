@@ -1,5 +1,5 @@
-from MineBannerLib.minebannerlib.create_banner import create_banner
-from MineBannerLib.minebannerlib.layer import Layer
+from MineBannerLib.create_banner import create_banner
+from MineBannerLib.layer import Layer
 
 nbts = '{BlockEntityTag:{Patterns:[{Color:14,Pattern:"cre"},{Color:4,Pattern:"sku"}]}}'
 color_base = 15
