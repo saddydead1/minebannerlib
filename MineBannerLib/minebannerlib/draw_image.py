@@ -1,9 +1,9 @@
 from nbtlib import parse_nbt
 import os
 from PIL import Image
-from MineBannerLib.pattern import pattern
-from MineBannerLib.color import Color
-from MineBannerLib.layer import Layer
+from MineBannerLib.minebannerlib.pattern import pattern
+from MineBannerLib.minebannerlib.color import Color
+from MineBannerLib.minebannerlib.layer import Layer
 
 
 def createImg(layers: list, name: str):
