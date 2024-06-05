@@ -25,7 +25,7 @@ To do this, call the `create_banner()` function, to which you need to pass the _
 ## Example create banner from nbts
 
 ```python
-from MineBannerLib import __main__
+import MineBannerLib
 
 mbl = CreateBanner
 
@@ -46,7 +46,7 @@ if __name__ == '__main__':
 You must pass the second argument to `create_banner()` a list containing elements of type `Layer`, as in the example below
 
 ```python
-from MineBannerLib import __main__
+import MineBannerLib
 from CreateBanner import Layer
 
 banner = CreateBanner
