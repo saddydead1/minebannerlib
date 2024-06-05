@@ -1,0 +1,17 @@
+[project]
+name = "minebannerlib"
+version = "0.1.0a"
+authors = [
+  { name="saddydead1", email="saddydead1@gmail.com" },
+]
+description = "Lib for create minecraft banner image"
+readme = "README.md"
+requires-python = ">=3.12"
+classifiers = [
+    "Programming Language :: Python :: 3.12",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/saddydead1/minebannerlib"
